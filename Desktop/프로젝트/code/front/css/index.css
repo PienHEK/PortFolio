@@ -1,0 +1,127 @@
+@import "//cdn.jsdelivr.net/npm/font-kopubworld@1.0/batang.min.css";
+
+body {
+    font-family: "KopubWorldBatang";
+    white-space: nowrap;
+}
+a {
+    text-decoration-line: none;
+}
+/* -------------------------------헤더------------------------------- */
+.top {
+    /* display: flex;
+    justify-content: center; */
+    position: fixed;
+
+    width: 100%;
+    height: 90px;
+    margin: 0 auto;
+
+    background-color: transparent;
+    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    z-index: 1;
+}
+.top {
+    font-size: 1.3rem;
+}
+
+.top .top-menu {
+    display: flex;
+    flex-direction: row;
+
+    align-items: flex-end;
+    justify-content: center;
+
+    gap: 20%;
+
+    width: 100%;
+    height: 80px;
+    margin: auto;
+}
+.top .top-menu .logo {
+    /* width: 100%; */
+    height: 70px;
+    color: transparent;
+}
+.top .top-menu .menu-bar {
+    display: flex;
+    flex-direction: row;
+    gap: 40px;
+}
+.top .top-menu .menu-bar a:hover {
+    color: #afafaf;
+}
+.top .top-menu .menu-bar .home {
+}
+.top .top-menu .menu-bar .about {
+}
+.top .top-menu .menu-bar .skill {
+}
+.top .top-menu .menu-bar .archive {
+}
+.top .top-menu .menu-bar .project {
+}
+/* -------------------------------내용------------------------------- */
+.content {
+}
+.content .intro {
+    width: 100%;
+    height: 920px;
+}
+.content .intro .img1 {
+    width: 100%;
+    height: 920px;
+    background: url("/img/index.png") no-repeat center;
+    background-size: cover;
+    background-blend-mode: multiply;
+    opacity: 20%;
+    z-index: 1;
+}
+.content .about {
+    width: 100%;
+    height: 920px;
+    background-color: #f2f2f2;
+}
+.content .skill {
+    width: 100%;
+    height: 920px;
+    background-color: #eff7f9;
+}
+.content .archive {
+    width: 100%;
+    height: 920px;
+    background-color: #e7f4e1;
+}
+.content .project {
+    width: 100%;
+    height: 920px;
+    background-color: #ffffff;
+}
+
+/* 2560 1280
+
+1920  920 */
+/*  -------------------------------반응형------------------------------- */
+@media (max-width: 1070px) {
+    .top .top-menu .logo {
+        display: none;
+    }
+}
+@media (min-width: 1920px) {
+    .content .intro .img1 {
+        height: 1200px;
+    }
+    .content .about {
+        height: 1200px;
+    }
+    .content .skill {
+        height: 1200px;
+    }
+    .content .archive {
+        height: 1200px;
+    }
+    .content .project {
+        height: 1200px;
+    }
+}
