@@ -437,6 +437,104 @@ a {
     width: 100%;
     height: 1000px;
     background-color: #e7f4e1;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.content .archive .archive-box {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    gap: 100px;
+    align-items: center;
+}
+/* -------------------------------아카이브 제목부------------------------------- */
+.content .archive .archive-box .archive-title {
+    display: flex;
+
+    align-items: center;
+    justify-content: center;
+
+    width: 100%;
+}
+.content .archive .archive-box .archive-title .title {
+    font-size: 64px;
+    border-bottom: 1px solid #8b8b8b;
+}
+/* -------------------------------아카이브 내용부------------------------------- */
+.content .archive .archive-box .archive-content {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    /* justify-content: center; */
+}
+.content .archive .archive-box .archive-content .archive-git {
+    display: grid;
+    grid-template-columns: auto auto;
+    grid-template-rows: auto 37px 37px 37px 37px 37px;
+    width: 100%;
+
+    font-size: 24px;
+    font-weight: lighter;
+
+    justify-items: center;
+}
+.content .archive .archive-box .archive-content .img {
+    grid-column: 2;
+    grid-row: 1;
+    width: 500px;
+    height: 300px;
+}
+.content .archive .archive-box .archive-content .archive-git .content1 {
+    grid-column: 2;
+    grid-row: 2;
+}
+.content .archive .archive-box .archive-content .archive-git .content2 {
+    grid-column: 2;
+    grid-row: 3;
+}
+.content .archive .archive-box .archive-content .archive-git .content3 {
+    grid-column: 2;
+    grid-row: 5;
+}
+.content .archive .archive-box .archive-content .archive-git .content4 {
+    grid-column: 2;
+    grid-row: 6;
+}
+.content .archive .archive-box .archive-content .archive-notion {
+    display: grid;
+    grid-template-columns: auto auto;
+    grid-template-rows: auto 37px 37px 37px 37px 37px;
+    width: 100%;
+
+    font-size: 24px;
+    font-weight: lighter;
+
+    justify-items: center;
+}
+.content .archive .archive-box .archive-content .archive-notion .img {
+    grid-column: 1;
+    grid-row: 1;
+    width: 500px;
+    height: 300px;
+}
+.content .archive .archive-box .archive-content .archive-notion .content1 {
+    grid-column: 1;
+    grid-row: 2;
+}
+.content .archive .archive-box .archive-content .archive-notion .content2 {
+    grid-column: 1;
+    grid-row: 3;
+}
+.content .archive .archive-box .archive-content .archive-notion .content3 {
+    grid-column: 1;
+    grid-row: 5;
+}
+.content .archive .archive-box .archive-content .archive-notion .content4 {
+    grid-column: 1;
+    grid-row: 6;
 }
 /* --------------------------------------------------------------프로젝트-------------------------------------------------------------- */
 .content .project {
