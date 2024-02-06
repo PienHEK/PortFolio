@@ -575,6 +575,21 @@ a {
     font-size: 64px;
     border-bottom: 1px solid #8b8b8b;
 }
+/* -------------------------------프로젝트 내용부------------------------------- */
+.content .project .project-box .project-content {
+}
+/* -------------------------------프로젝트1------------------------------- */
+.content .project .project-box .project-content .project1 {
+}
+/* -------------------------------프로젝트2------------------------------- */
+.content .project .project-box .project-content .project2 {
+}
+/* -------------------------------프로젝트3------------------------------- */
+.content .project .project-box .project-content .project3 {
+}
+/* -------------------------------프로젝트4------------------------------- */
+.content .project .project-box .project-content .project4 {
+}
 /*  --------------------------------------------------------------반응형-------------------------------------------------------------- */
 @media (max-width: 1070px) {
     .top .top-menu .logo {
