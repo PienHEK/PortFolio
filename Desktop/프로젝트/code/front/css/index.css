@@ -547,13 +547,16 @@ a {
 /* --------------------------------------------------------------프로젝트-------------------------------------------------------------- */
 .content .project {
     width: 100%;
-    height: 1000px;
+    height: 100%;
     background-color: #ffffff;
 
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
+
+    margin-top: 5rem;
+    margin-bottom: 5rem;
 }
 .content .project .project-box {
     display: flex;
@@ -577,18 +580,143 @@ a {
 }
 /* -------------------------------프로젝트 내용부------------------------------- */
 .content .project .project-box .project-content {
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    white-space: normal;
+    gap: 5rem;
 }
 /* -------------------------------프로젝트1------------------------------- */
 .content .project .project-box .project-content .project1 {
+    display: grid;
+    grid-template-columns: auto 1rem auto;
+    grid-template-rows: auto auto;
+    width: 100%;
 }
+.content .project .project-box .project-content .project1 .prj-img {
+    grid-column: 1;
+    grid-row: 1/3;
+    width: 300px;
+    height: 400px;
+}
+
+.content .project .project-box .project-content .project1 .project-name {
+    grid-column: 3;
+    grid-row: 1;
+    font-size: 30px;
+    font-weight: bold;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.content .project .project-box .project-content .project1 .content {
+    grid-column: 3;
+    grid-row: 2;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 5px;
+}
+
 /* -------------------------------프로젝트2------------------------------- */
 .content .project .project-box .project-content .project2 {
+    display: grid;
+    grid-template-columns: auto 1rem auto;
+    grid-template-rows: auto auto;
+    width: 100%;
+}
+.content .project .project-box .project-content .project2 .prj-img {
+    grid-column: 1;
+    grid-row: 1/3;
+    width: 300px;
+    height: 400px;
+}
+.content .project .project-box .project-content .project2 .project-name {
+    grid-column: 3;
+    grid-row: 1;
+    font-size: 30px;
+    font-weight: bold;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.content .project .project-box .project-content .project2 .content {
+    grid-column: 3;
+    grid-row: 2;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 5px;
 }
 /* -------------------------------프로젝트3------------------------------- */
 .content .project .project-box .project-content .project3 {
+    display: grid;
+    grid-template-columns: auto 1rem auto;
+    grid-template-rows: auto auto;
+    width: 100%;
+}
+.content .project .project-box .project-content .project3 .prj-img {
+    grid-column: 1;
+    grid-row: 1/3;
+    width: 300px;
+    height: 400px;
+}
+.content .project .project-box .project-content .project3 .project-name {
+    grid-column: 3;
+    grid-row: 1;
+    font-size: 30px;
+    font-weight: bold;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.content .project .project-box .project-content .project3 .content {
+    grid-column: 3;
+    grid-row: 2;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 5px;
 }
 /* -------------------------------프로젝트4------------------------------- */
 .content .project .project-box .project-content .project4 {
+    display: grid;
+    grid-template-columns: auto 1rem auto;
+    grid-template-rows: auto auto;
+    width: 100%;
+}
+.content .project .project-box .project-content .project4 .prj-img {
+    grid-column: 1;
+    grid-row: 1/3;
+    width: 300px;
+    height: 400px;
+}
+.content .project .project-box .project-content .project4 .project-name {
+    grid-column: 3;
+    grid-row: 1;
+    font-size: 30px;
+    font-weight: bold;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.content .project .project-box .project-content .project4 .content {
+    grid-column: 3;
+    grid-row: 2;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 5px;
+}
+/* --------------------------------------------------------------Footer-------------------------------------------------------------- */
+.footer {
+    width: 100%;
+    height: 300px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #858585;
 }
 /*  --------------------------------------------------------------반응형-------------------------------------------------------------- */
 @media (max-width: 1070px) {
@@ -611,6 +739,6 @@ a {
         height: 1300px;
     }
     .content .project {
-        height: 1300px;
+        height: 100%;
     }
 }
