@@ -1,13 +1,14 @@
 <!DOCTYPE html>
 <html lang="en">
+    <script src="../js/click.js" defer></script>
+
     <head>
         <meta charset="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/font-kopubworld@1.0/batang.min.css" />
 
-        <link href="/css/reset.css" rel="stylesheet" type="text/css" />
-        <link href="/css/index.css" rel="stylesheet" type="text/css" />
-
+        <link href="../css/reset.css" rel="stylesheet" type="text/css" />
+        <link href="../css/index.css" rel="stylesheet" type="text/css" />
         <title>Document</title>
     </head>
     <!-- --------------------------------------------------------------------------------------------- -->
@@ -27,32 +28,32 @@
                 <!-- -------------------------------메뉴바------------------------------- -->
                 <div class="menu-bar">
                     <!-- ---------------home--------------- -->
-                    <div class="home">
-                        <a href>
+                    <div class="home scroll">
+                        <a href="#scroll1">
                             <span>Home</span>
                         </a>
                     </div>
                     <!-- ---------------about me--------------- -->
-                    <div class="about">
-                        <a href>
+                    <div class="about scroll">
+                        <a href="#scroll2">
                             <span>About Me</span>
                         </a>
                     </div>
                     <!-- ---------------skills--------------- -->
-                    <div class="skill">
-                        <a href>
+                    <div class="skill scroll">
+                        <a href="#scroll3">
                             <span>Skills</span>
                         </a>
                     </div>
                     <!-- ---------------archiving--------------- -->
-                    <div class="archive">
-                        <a href>
+                    <div class="archive scroll">
+                        <a href="#scroll4">
                             <span>Archiving</span>
                         </a>
                     </div>
                     <!-- ---------------projects--------------- -->
-                    <div class="project">
-                        <a href>
+                    <div class="project scroll">
+                        <a href="#scroll5">
                             <span>Projects</span>
                         </a>
                     </div>
@@ -68,7 +69,7 @@
 
             <!-- --------------------------------------------------------------Intro-------------------------------------------------------------- -->
 
-            <section class="intro">
+            <section class="intro" id="#scroll1">
                 <h2 style="display: none">Introduce</h2>
                 <section class="intro-content">
                     <h3 style="display: none">자기 소개</h3>
@@ -86,7 +87,7 @@
 
             <!-- --------------------------------------------------------------About Me-------------------------------------------------------------- -->
 
-            <section class="about">
+            <section class="about" id="#scroll2">
                 <h2 style="display: none">About Me</h2>
                 <section class="about-box">
                     <h3 style="display: none">인적 사항</h3>
@@ -129,7 +130,7 @@
 
             <!-- --------------------------------------------------------------Skills-------------------------------------------------------------- -->
 
-            <section class="skill">
+            <section class="skill" id="#scroll3">
                 <h2 style="display: none">Skills</h2>
                 <!-- -------------------------------기술------------------------------- -->
                 <section class="skill-box">
@@ -175,7 +176,7 @@
 
             <!-- --------------------------------------------------------------Archiving-------------------------------------------------------------- -->
 
-            <section class="archive">
+            <section class="archive" id="#scroll4">
                 <h2 style="display: none">Archiving</h2>
                 <section class="archive-box">
                     <h3 style="display: none">아카이브</h3>
@@ -203,7 +204,7 @@
             </section>
 
             <!-- --------------------------------------------------------------Projects-------------------------------------------------------------- -->
-            <section class="project">
+            <section class="project" id="#scroll5">
                 <h2 style="display: none">Projects</h2>
                 <section class="project-box">
                     <h3 style="display: none">프로젝트</h3>
@@ -233,8 +234,8 @@
                                 <p>유한대학교 C# 기말 과제 프로젝트</p>
                                 <a href="https://github.com/minseong00/2jo">https://github.com/minseong00/2jo</a>
                                 <p>대학 프로젝트로 T오더와 같이 사용자가 앉은 자리에서 메뉴를 주문하고 결제할 수 있는 프로그램입니다.</p>
-                                <p>처음으로 Git을 이용하여 협업한 프로젝트로, 프로그래밍을 어떻게 하는 것인지 알 수 있었던 프로젝트였습니다.</p>
                                 <p>당시 외부 활동으로 인해 프로젝트에 많은 시간을 쓸 수 없었지만 팀원들과 지속적으로 소통하여 프로젝트에 최대한 참여하였습니다.</p>
+                                <p>처음으로 Git을 이용하여 협업한 프로젝트로, 프로그래밍을 어떻게 하는 것인지 알 수 있었던 프로젝트였습니다.</p>
                             </div>
                         </section>
                         <!-- -------------------------------프로젝트3------------------------------- -->
@@ -269,6 +270,7 @@
                                 <p>기본기 위주의 프로젝트입니다. 공부한 것들을 되새김질하고 미숙한 부분들에 익숙해지기 위한 프로젝트입니다.
                                     Vue.js를 이용하여~
                                 </p>
+                                <p></p>
                             </div>
                         </section>  
                     </div>

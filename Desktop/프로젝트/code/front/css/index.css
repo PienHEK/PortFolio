@@ -55,7 +55,7 @@ a {
 .top .top-menu .menu-bar a:hover {
     color: #afafaf;
 }
-.top .top-menu .menu-bar .home {
+/* .top .top-menu .menu-bar .home {
 }
 .top .top-menu .menu-bar .about {
 }
@@ -64,10 +64,10 @@ a {
 .top .top-menu .menu-bar .archive {
 }
 .top .top-menu .menu-bar .project {
-}
+} */
 /* -------------------------------내용------------------------------- */
-.content {
-}
+/* .content {
+} */
 
 .content .intro {
     position: relative;
@@ -589,7 +589,7 @@ a {
 /* -------------------------------프로젝트1------------------------------- */
 .content .project .project-box .project-content .width-prj {
     display: grid;
-    grid-template-columns: auto 1rem auto;
+    grid-template-columns: auto 2rem auto;
     grid-template-rows: auto auto;
     width: 100%;
 }
@@ -597,7 +597,7 @@ a {
     grid-column: 1;
     grid-row: 1/3;
     width: 500px;
-    height: 600px;
+    height: 550px;
     align-items: center;
 }
 
@@ -622,7 +622,7 @@ a {
 /* -------------------------------프로젝트2------------------------------- */
 .content .project .project-box .project-content .height-prj {
     display: grid;
-    grid-template-columns: auto 1rem auto;
+    grid-template-columns: auto 2rem auto;
     grid-template-rows: auto auto;
     width: 100%;
     align-items: center;
@@ -716,7 +716,7 @@ a {
 /* --------------------------------------------------------------Footer-------------------------------------------------------------- */
 .footer {
     width: 100%;
-    height: 300px;
+    height: 200px;
     display: flex;
     flex-direction: column;
     justify-content: center;
