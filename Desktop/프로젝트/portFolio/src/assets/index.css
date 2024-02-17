@@ -1,0 +1,749 @@
+@import "//cdn.jsdelivr.net/npm/font-kopubworld@1.0/batang.min.css";
+
+body {
+    font-family: "KopubWorldBatang";
+    white-space: nowrap;
+}
+a {
+    text-decoration-line: none;
+}
+/* -------------------------------헤더------------------------------- */
+.top {
+    /* display: flex;
+    justify-content: center; */
+    position: fixed;
+
+    width: 100%;
+    height: 90px;
+    margin: 0 auto;
+
+    background-color: #fff;
+    border-radius: 0 0 10px 10px;
+    /* 상단 메뉴바에 그림자 */
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    z-index: 99;
+}
+.top {
+    font-size: 1.1rem;
+}
+
+.top .top-menu {
+    display: flex;
+    flex-direction: row;
+
+    align-items: flex-end;
+    justify-content: center;
+
+    gap: 20%;
+
+    width: 100%;
+    height: 80px;
+    margin: auto;
+}
+.top .top-menu .logo {
+    /* width: 100%; */
+    height: 70px;
+    color: transparent;
+}
+.top .top-menu .menu-bar {
+    display: flex;
+    flex-direction: row;
+    gap: 40px;
+}
+.top .top-menu .menu-bar a:hover {
+    color: #afafaf;
+}
+/* .top .top-menu .menu-bar .home {
+}
+.top .top-menu .menu-bar .about {
+}
+.top .top-menu .menu-bar .skill {
+}
+.top .top-menu .menu-bar .archive {
+}
+.top .top-menu .menu-bar .project {
+} */
+/* -------------------------------내용------------------------------- */
+/* .content {
+} */
+
+.content .intro {
+    position: relative;
+    width: 100%;
+    height: 1000px;
+    /* top: 90px; */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.content .intro::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    /* content부터 bottom까지 이미지 표시를 위한 내용. */
+    background: url("/img/index.png") no-repeat center center;
+    background-size: cover;
+    background-blend-mode: multiply;
+    opacity: 20%;
+    z-index: 0;
+}
+/* --------------------------------------------------------------자기 소개-------------------------------------------------------------- */
+.content .intro .intro-content {
+    position: relative;
+
+    display: flex;
+    flex-direction: column;
+
+    gap: 50px;
+
+    align-items: center;
+}
+/* -------------------------------자기 소개 제목부------------------------------- */
+.content .intro .intro-content .content-title {
+    font-size: 64px;
+}
+/* -------------------------------자기 소개 내용부------------------------------- */
+.content .intro .intro-content .content-content {
+    font-size: 36px;
+}
+/* -------------------------------자기 소개 정렬------------------------------- */
+.content .intro .intro-content div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+/* -------------------------------자기 소개 구분부------------------------------- */
+.content .intro .intro-content hr {
+    border: none; /* 기본 테두리 제거 */
+    height: 3px; /* 선의 높이 */
+    background-color: #8b8b8b; /* 선의 색상 */
+    width: 50px; /* 선의 너비 */
+    margin: 0 auto; /* 좌우 마진 자동으로 설정하여 중앙 정렬 */
+    position: absolute; /* 절대 위치 */
+    left: 50%; /* 왼쪽에서 50% 떨어진 곳에 배치 */
+    bottom: 40%; /* 아래에서 0px 떨어진 곳에 배치 */
+    transform: translateX(-50%); /* X축 기준으로 -50% 이동하여 정확히 중앙에 배치 */
+}
+/* --------------------------------------------------------------인적 사항-------------------------------------------------------------- */
+/* 내용부의 ~1, ~2는 인적 사항의 주제와 내용이다. ex)name1 = 이름, name2 = 홍길동 */
+.content .about {
+    width: 100%;
+    height: 1000px;
+    background-color: #f2f2f2;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.content .about .about-box {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    gap: 100px;
+}
+/* -------------------------------인적 사항 제목부------------------------------- */
+.content .about .about-title {
+    display: flex;
+
+    align-items: center;
+    justify-content: center;
+
+    width: 100%;
+}
+.content .about .about-title .title {
+    font-size: 64px;
+    border-bottom: 1px solid #8b8b8b;
+}
+/* -------------------------------인적 사항 내용부------------------------------- */
+.content .about .about-content {
+    /* display: grid;
+    grid-template-columns: 5;
+    grid-template-rows: 3; */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 100px;
+    /* justify-content: center; */
+
+    width: 100%;
+}
+/* -------------------------------인적 사항 내용부 1------------------------------- */
+.content .about .about-content .sub1 {
+    /* display: flex;
+    flex-direction: row; */
+
+    display: grid;
+    grid-template-columns: 20% 20% 20% 20% 20%;
+    grid-template-rows: 2;
+
+    width: 70%;
+
+    /* gap: 300px; */
+}
+/* -------------------------------이름------------------------------- */
+
+.content .about .about-content .sub1 .name1 {
+    font-size: 32px;
+    font-weight: bold;
+
+    grid-column: 1;
+    grid-row: 1;
+}
+.content .about .about-content .sub1 .name2 {
+    font-size: 36px;
+    font-weight: lighter;
+
+    grid-column: 1;
+    grid-row: 2;
+
+    /* justify-self: right; */
+}
+/* -------------------------------생년월일------------------------------- */
+
+.content .about .about-content .sub1 .birth1 {
+    font-size: 32px;
+    font-weight: bold;
+
+    grid-column: 3;
+    grid-row: 1;
+}
+.content .about .about-content .sub1 .birth2 {
+    font-size: 36px;
+    font-weight: lighter;
+
+    grid-column: 3;
+    grid-row: 2;
+}
+/* -------------------------------주소------------------------------- */
+
+.content .about .about-content .sub1 .address1 {
+    font-size: 32px;
+    font-weight: bold;
+
+    grid-column: 5;
+    grid-row: 1;
+}
+.content .about .about-content .sub1 .address2 {
+    font-size: 36px;
+    font-weight: lighter;
+
+    grid-column: 5;
+    grid-row: 2;
+}
+/* -------------------------------인적 사항 내용부 2------------------------------- */
+.content .about .about-content .sub2 {
+    /* display: flex;
+    flex-direction: row; */
+
+    display: grid;
+    grid-template-columns: 20% 20% 20% 20% 20%;
+    grid-template-rows: 3;
+
+    width: 70%;
+
+    /* gap: 150px; */
+}
+/* -------------------------------연락처------------------------------- */
+
+.content .about .about-content .sub2 .phone1 {
+    font-size: 32px;
+    font-weight: bold;
+
+    grid-column: 1;
+    grid-row: 1;
+}
+.content .about .about-content .sub2 .phone2 {
+    font-size: 36px;
+    font-weight: lighter;
+
+    grid-column: 1;
+    grid-row: 2;
+}
+/* -------------------------------이메일------------------------------- */
+
+.content .about .about-content .sub2 .email1 {
+    font-size: 32px;
+    font-weight: bold;
+
+    grid-column: 3;
+    grid-row: 1;
+}
+.content .about .about-content .sub2 .email2 {
+    font-size: 36px;
+    font-weight: lighter;
+
+    grid-column: 3;
+    grid-row: 2;
+}
+/* -------------------------------학력------------------------------- */
+
+.content .about .about-content .sub2 .education1 {
+    font-size: 32px;
+    font-weight: bold;
+
+    grid-column: 5;
+    grid-row: 1;
+}
+.content .about .about-content .sub2 .education2 {
+    font-size: 36px;
+    font-weight: lighter;
+
+    grid-column: 5;
+    grid-row: 2;
+}
+.content .about .about-content .sub2 .education3 {
+    font-size: 36px;
+    font-weight: lighter;
+
+    grid-column: 5;
+    grid-row: 3;
+}
+/* --------------------------------------------------------------기술-------------------------------------------------------------- */
+.content .skill {
+    width: 100%;
+    height: 1000px;
+    background-color: #eff7f9;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.content .skill .skill-box {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    gap: 100px;
+    align-items: center;
+}
+/* -------------------------------기술 제목부------------------------------- */
+.content .skill .skill-box .skill-title {
+    display: flex;
+
+    align-items: center;
+    justify-content: center;
+
+    width: 100%;
+}
+.content .skill .skill-box .skill-title .title {
+    font-size: 64px;
+    border-bottom: 1px solid #8b8b8b;
+}
+/* -------------------------------기술 내용부------------------------------- */
+.content .skill .skill-box .skill-content {
+    display: grid;
+    grid-template-columns: 7;
+    /* grid-template-rows: 1; */
+
+    width: 70%;
+
+    /* gap: 50px; */
+}
+
+/* -------------------------------프론트------------------------------- */
+.content .skill .skill-box .skill-content .front {
+    display: flex;
+    flex-direction: column;
+
+    align-items: center;
+    grid-column: 1;
+
+    gap: 30px;
+}
+.content .skill .skill-box .skill-content .front .title {
+    font-size: 36px;
+    font-weight: bold;
+}
+.content .skill .skill-box .skill-content .front .stack {
+    width: 300px;
+    height: 130px;
+}
+/* -------------------------------백------------------------------- */
+.content .skill .skill-box .skill-content .back {
+    display: flex;
+    flex-direction: column;
+
+    align-items: center;
+
+    grid-column: 3;
+
+    gap: 30px;
+}
+.content .skill .skill-box .skill-content .back .title {
+    font-size: 36px;
+    font-weight: bold;
+}
+.content .skill .skill-box .skill-content .back .stack-box {
+    display: flex;
+    flex-direction: column;
+}
+.content .skill .skill-box .skill-content .back .stack-box .stack {
+    width: 300px;
+    height: 130px;
+}
+/* -------------------------------형상관리------------------------------- */
+.content .skill .skill-box .skill-content .vc {
+    display: flex;
+    flex-direction: column;
+
+    align-items: center;
+
+    grid-column: 5;
+
+    gap: 30px;
+}
+.content .skill .skill-box .skill-content .vc .title {
+    font-size: 36px;
+    font-weight: bold;
+}
+
+.content .skill .skill-box .skill-content .vc .stack {
+    width: 300px;
+    height: 130px;
+}
+
+/* -------------------------------자격증------------------------------- */
+.content .skill .skill-box .skill-content .cert {
+    display: flex;
+    flex-direction: column;
+
+    align-items: center;
+
+    grid-column: 7;
+
+    gap: 30px;
+}
+.content .skill .skill-box .skill-content .cert .title {
+    font-size: 36px;
+    font-weight: bold;
+}
+.content .skill .skill-box .skill-content .cert .stack {
+    width: 300px;
+    height: 130px;
+}
+.content .skill .skill-box .skill-content .cert .cert-name {
+    font-size: 32px;
+    font-weight: bold;
+}
+/* --------------------------------------------------------------아카이브-------------------------------------------------------------- */
+.content .archive {
+    width: 100%;
+    height: 1000px;
+    background-color: #e7f4e1;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.content .archive .archive-box {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    gap: 100px;
+    align-items: center;
+}
+/* -------------------------------아카이브 제목부------------------------------- */
+.content .archive .archive-box .archive-title {
+    display: flex;
+
+    align-items: center;
+    justify-content: center;
+
+    width: 100%;
+}
+.content .archive .archive-box .archive-title .title {
+    font-size: 64px;
+    border-bottom: 1px solid #8b8b8b;
+}
+/* -------------------------------아카이브 내용부------------------------------- */
+.content .archive .archive-box .archive-content {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    /* justify-content: center; */
+}
+.content .archive .archive-box .archive-content .archive-git {
+    display: grid;
+    grid-template-columns: auto auto;
+    grid-template-rows: auto 37px 37px 37px 37px 37px;
+    width: 100%;
+
+    font-size: 24px;
+    font-weight: lighter;
+
+    justify-items: center;
+}
+.content .archive .archive-box .archive-content .img {
+    grid-column: 2;
+    grid-row: 1;
+    width: 500px;
+    height: 300px;
+}
+.content .archive .archive-box .archive-content .archive-git .content1 {
+    grid-column: 2;
+    grid-row: 2;
+
+    font-weight: bold;
+}
+.content .archive .archive-box .archive-content .archive-git .content2 {
+    grid-column: 2;
+    grid-row: 3;
+}
+.content .archive .archive-box .archive-content .archive-git .content3 {
+    grid-column: 2;
+    grid-row: 5;
+
+    font-weight: bold;
+}
+.content .archive .archive-box .archive-content .archive-git .content4 {
+    grid-column: 2;
+    grid-row: 6;
+}
+.content .archive .archive-box .archive-content .archive-notion {
+    display: grid;
+    grid-template-columns: auto auto;
+    grid-template-rows: auto 37px 37px 37px 37px 37px;
+    width: 100%;
+
+    font-size: 24px;
+    font-weight: lighter;
+
+    justify-items: center;
+}
+.content .archive .archive-box .archive-content .archive-notion .img {
+    grid-column: 1;
+    grid-row: 1;
+    width: 500px;
+    height: 300px;
+}
+.content .archive .archive-box .archive-content .archive-notion .content1 {
+    grid-column: 1;
+    grid-row: 2;
+
+    font-weight: bold;
+}
+.content .archive .archive-box .archive-content .archive-notion .content2 {
+    grid-column: 1;
+    grid-row: 3;
+}
+.content .archive .archive-box .archive-content .archive-notion .content3 {
+    grid-column: 1;
+    grid-row: 5;
+
+    font-weight: bold;
+}
+.content .archive .archive-box .archive-content .archive-notion .content4 {
+    grid-column: 1;
+    grid-row: 6;
+}
+/* --------------------------------------------------------------프로젝트-------------------------------------------------------------- */
+.content .project {
+    width: 100%;
+    height: 100%;
+    background-color: #ffffff;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    margin-top: 5rem;
+    margin-bottom: 5rem;
+}
+.content .project .project-box {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    gap: 100px;
+    align-items: center;
+}
+/* -------------------------------프로젝트 제목부------------------------------- */
+.content .project .project-box .project-title {
+    display: flex;
+
+    align-items: center;
+    justify-content: center;
+
+    width: 100%;
+}
+.content .project .project-box .project-title .title {
+    font-size: 64px;
+    border-bottom: 1px solid #8b8b8b;
+}
+/* -------------------------------프로젝트 내용부------------------------------- */
+.content .project .project-box .project-content {
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    white-space: normal;
+    gap: 5rem;
+}
+/* -------------------------------프로젝트1------------------------------- */
+.content .project .project-box .project-content .width-prj {
+    display: grid;
+    grid-template-columns: auto 2rem auto;
+    grid-template-rows: auto auto;
+    width: 100%;
+}
+.content .project .project-box .project-content .width-prj .prj-img {
+    grid-column: 1;
+    grid-row: 1/3;
+    width: 500px;
+    height: 550px;
+    align-items: center;
+}
+
+.content .project .project-box .project-content .width-prj .project-name {
+    grid-column: 3;
+    grid-row: 1;
+    font-size: 30px;
+    font-weight: bold;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.content .project .project-box .project-content .width-prj .content {
+    grid-column: 3;
+    grid-row: 2;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 5px;
+}
+
+/* -------------------------------프로젝트2------------------------------- */
+.content .project .project-box .project-content .height-prj {
+    display: grid;
+    grid-template-columns: auto 2rem auto;
+    grid-template-rows: auto auto;
+    width: 100%;
+    align-items: center;
+}
+.content .project .project-box .project-content .height-prj .prj-img {
+    grid-column: 1;
+    grid-row: 1/3;
+    width: 500px;
+    height: 400px;
+    align-items: center;
+}
+.content .project .project-box .project-content .height-prj .project-name {
+    grid-column: 3;
+    grid-row: 1;
+    font-size: 30px;
+    font-weight: bold;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.content .project .project-box .project-content .height-prj .content {
+    grid-column: 3;
+    grid-row: 2;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 5px;
+}
+/* -------------------------------프로젝트3------------------------------- */
+/* .content .project .project-box .project-content .project3 {
+    display: grid;
+    grid-template-columns: auto 1rem auto;
+    grid-template-rows: auto auto;
+    width: 100%;
+}
+.content .project .project-box .project-content .project3 .prj-img {
+    grid-column: 1;
+    grid-row: 1/3;
+    width: 400px;
+    height: 300px;
+    align-items: center;
+}
+.content .project .project-box .project-content .project3 .project-name {
+    grid-column: 3;
+    grid-row: 1;
+    font-size: 30px;
+    font-weight: bold;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.content .project .project-box .project-content .project3 .content {
+    grid-column: 3;
+    grid-row: 2;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 5px;
+} */
+/* -------------------------------프로젝트4------------------------------- */
+/* .content .project .project-box .project-content .project4 {
+    display: grid;
+    grid-template-columns: auto 1rem auto;
+    grid-template-rows: auto auto;
+    width: 100%;
+}
+.content .project .project-box .project-content .project4 .prj-img {
+    grid-column: 1;
+    grid-row: 1/3;
+    width: 400px;
+    height: 300px;
+    align-items: center;
+}
+.content .project .project-box .project-content .project4 .project-name {
+    grid-column: 3;
+    grid-row: 1;
+    font-size: 30px;
+    font-weight: bold;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.content .project .project-box .project-content .project4 .content {
+    grid-column: 3;
+    grid-row: 2;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 5px;
+} */
+/* --------------------------------------------------------------Footer-------------------------------------------------------------- */
+.footer {
+    width: 100%;
+    height: 200px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #858585;
+}
+/*  --------------------------------------------------------------반응형-------------------------------------------------------------- */
+@media (max-width: 1070px) {
+    .top .top-menu .logo {
+        display: none;
+    }
+}
+/* -------------------------------1921 이상의 해상도에서 사용되는 사이즈.------------------------------- */
+@media (min-width: 1921px) {
+    .content .intro {
+        height: 1300px;
+    }
+    .content .about {
+        height: 1300px;
+    }
+    .content .skill {
+        height: 1300px;
+    }
+    .content .archive {
+        height: 1300px;
+    }
+    .content .project {
+        height: 100%;
+    }
+}
