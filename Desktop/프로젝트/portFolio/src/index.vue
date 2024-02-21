@@ -85,6 +85,7 @@ import { RouterLink, RouterView } from "vue-router";
                     <div class="content-content">
                         <p>안녕하세요.</p>
                         <p>신입 웹 개발자 강한얼입니다.</p>
+                        <p>현재 수정 중인 페이지입니다.</p>
                     </div>
                 </section>
             </section>
