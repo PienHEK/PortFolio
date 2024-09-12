@@ -4,320 +4,335 @@ import { RouterLink, RouterView } from "vue-router";
 </script>
 
 <template>
-    <head>
-        <meta charset="UTF-8" />
-        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/font-kopubworld@1.0/batang.min.css" />
+    <RouterView>
+        <head>
+            <meta charset="UTF-8" />
+            <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+            <!-- <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/font-kopubworld@1.0/batang.min.css" /> -->
 
-        <link href="../css/reset.css" rel="stylesheet" type="text/css" />
-        <link href="../css/index.css" rel="stylesheet" type="text/css" />
+            <link href="../css/reset.css" rel="stylesheet" type="text/css" />
+            <link href="../css/index.css" rel="stylesheet" type="text/css" />
+            <link href="portFolio\src\assets\font-kopubworld-master\css" rel="stylesheet" type="text/css" />
 
-        <!-- <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script> -->
-        <title>Document</title>
-    </head>
-    <!-- --------------------------------------------------------------------------------------------- -->
-    <body>
-        <!-- --------------------------------------------------------------헤더-------------------------------------------------------------- -->
-        <header class="top">
-            <h1 style="display: none">상단</h1>
-            <nav class="top-menu">
-                <h2 style="display: none">상단메뉴</h2>
-                <!--  -------------------------------로고------------------------------- -->
-                <div class="logo">
-                    <a href class="">
-                        <img src="./assets/img/logo2.png" />
-                        <span style="display: none">PortFolio</span>
-                    </a>
-                </div>
-                <!-- -------------------------------메뉴바------------------------------- -->
-                <div class="menu-bar">
-                    <!-- ---------------home--------------- -->
-                    <div class="home scroll">
-                        <a href="#scroll1">
-                            <span>Home</span>
+            <!-- <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script> -->
+            <title>Document</title>
+        </head>
+        <!-- --------------------------------------------------------------------------------------------- -->
+        <body>
+            <!-- --------------------------------------------------------------헤더-------------------------------------------------------------- -->
+            <header class="top">
+                <h1 style="display: none">상단</h1>
+                git
+                <nav class="top-menu">
+                    <h2 style="display: none">상단메뉴</h2>
+                    <!--  -------------------------------로고------------------------------- -->
+                    <div class="logo">
+                        <a href class="">
+                            <img src="./assets/img/logo2.png" />
+                            <span style="display: none">PortFolio</span>
                         </a>
                     </div>
-                    <!-- ---------------about me--------------- -->
-                    <div class="about scroll">
-                        <a href="#scroll2">
-                            <span>About Me</span>
-                        </a>
-                    </div>
-                    <!-- ---------------skills--------------- -->
-                    <div class="skill scroll">
-                        <a href="#scroll3">
-                            <span>Skills</span>
-                        </a>
-                    </div>
-                    <!-- ---------------archiving--------------- -->
-                    <div class="archive scroll">
-                        <a href="#scroll4">
-                            <span>Archiving</span>
-                        </a>
-                    </div>
-                    <!-- ---------------projects--------------- -->
-                    <div class="project scroll">
-                        <a href="#scroll5">
-                            <span>Projects</span>
-                        </a>
-                    </div>
-                    <!-- ------------------------------ -->
-                </div>
-                <!-- menu-bar 끝 -->
-            </nav>
-            <!-- top-menu 끝 -->
-        </header>
-        <!-- -------------------------------내용------------------------------- -->
-        <section class="content">
-            <h1 style="display: none">주 내용</h1>
-
-            <!-- --------------------------------------------------------------Intro-------------------------------------------------------------- -->
-
-            <section class="intro" id="#scroll1">
-                <h2 style="display: none">Introduce</h2>
-                <section class="intro-content">
-                    <h3 style="display: none">자기 소개</h3>
-                    <div class="content-title">
-                        <p>강한얼</p>
-                        <p>웹 개발자 포트폴리오</p>
-                    </div>
-                    <hr />
-                    <div class="content-content">
-                        <p>안녕하세요.</p>
-                        <p>신입 웹 개발자 강한얼입니다.</p>
-                        <p>현재 수정 중인 페이지입니다.</p>
-                    </div>
-                </section>
-            </section>
-
-            <!-- --------------------------------------------------------------About Me-------------------------------------------------------------- -->
-
-            <section class="about" id="#scroll2">
-                <h2 style="display: none">About Me</h2>
-                <section class="about-box">
-                    <h3 style="display: none">인적 사항</h3>
-                    <!-- -------------------------------인적 사항 제목부------------------------------- -->
-                    <div class="about-title">
-                        <p class="title">About Me</p>
-                    </div>
-                    <!-- -------------------------------인적 사항 내용부------------------------------- -->
-                    <div class="about-content">
-                        <!-- -------------------------------인적 사항 내용부 1------------------------------- -->
-                        <div class="sub1">
-                            <p class="name1">이름</p>
-                            <p class="name2">강한얼</p>
-
-                            <p class="birth1">생년월일</p>
-                            <p class="birth2">1999.02.06</p>
-
-                            <p class="address1">주소</p>
-                            <p class="address2">서울특별시 영등포구</p>
-                        </div>
-                        <!-- -------------------------------인적 사항 내용부 2------------------------------- -->
-                        <div class="sub2">
-                            <p class="phone1">연락처</p>
-                            <p class="phone2">010-9094-3145</p>
-
-                            <p class="email1">이메일</p>
-                            <p class="email2">skyaliqo0206@gmail.com</p>
-
-                            <p class="education1">학력</p>
-                            <p class="education2">유한대학교</p>
-                            <p class="education3">컴퓨터 소프트웨어 공학과</p>
-                        </div>
-                    </div>
-                    <!-- -------------------------------인적 사항 내용부 2 끝------------------------------- -->
-                    <!-- -------------------------------인적 사항 배용부 끝------------------------------- -->
-                </section>
-            </section>
-
-            <!-- --------------------------------------------------------------Skills-------------------------------------------------------------- -->
-
-            <section class="skill" id="#scroll3">
-                <h2 style="display: none">Skills</h2>
-                <!-- -------------------------------기술------------------------------- -->
-                <section class="skill-box">
-                    <h3 style="display: none">기술</h3>
-                    <!-- -------------------------------기술 제목부------------------------------- -->
-                    <div class="skill-title">
-                        <p class="title">Skills</p>
-                    </div>
-                    <!-- -------------------------------기술 내용부------------------------------- -->
-                    <div class="skill-content">
-                        <!-- -------------------------------프론트------------------------------- -->
-                        <div class="front">
-                            <p class="title">Front End</p>
-                            <img class="stack" src="./assets/img/Skills/front/img.png" />
-                            <!-- <img  class="" src="" /> -->
-                        </div>
-                        <!-- -------------------------------백------------------------------- -->
-                        <div class="back">
-                            <p class="title">Back End</p>
-                            <div class="stack-box">
-                                <img class="stack" src="./assets/img/Skills/back/java.png" />
-                                <img class="stack" src="./assets/img/Skills/back/spring.png" />
-                                <img class="stack" src="./assets/img/Skills/back/boot.png" />
-                                <img class="stack" src="./assets/img/Skills/back/maria.png" />
-                            </div>
-                        </div>
-                        <!-- -------------------------------형상관리------------------------------- -->
-                        <div class="vc">
-                            <p class="title">Version Control</p>
-                            <img class="stack" src="./assets/img/Skills/version control/git.png" />
-                            <img class="stack" src="./assets/img/Skills/version control/github2.png" />
-                        </div>
-                        <!-- -------------------------------자격증------------------------------- -->
-                        <div class="cert">
-                            <p class="title">Certification</p>
-                            <img class="stack" src="./assets/img/Skills/certification/cert.png" />
-                            <p class="cert-name">정보처리산업기사</p>
-                            <!-- <img  class="" src="" /> -->
-                        </div>
-                    </div>
-                </section>
-            </section>
-
-            <!-- --------------------------------------------------------------Archiving-------------------------------------------------------------- -->
-
-            <section class="archive" id="#scroll4">
-                <h2 style="display: none">Archiving</h2>
-                <section class="archive-box">
-                    <h3 style="display: none">아카이브</h3>
-                    <div class="archive-title"><p class="title">Archiving</p></div>
-                    <div class="archive-content">
-                        <div class="archive-git">
-                            <img class="img" src="./assets/img/Skills/version control/github2.png" />
-                            <p class="content1">2024 이후 프로젝트 소스코드</p>
-                            <a class="content2" href="https://github.com/PienHEK">https://github.com/PienHEK</a>
-                            <p class="content3">2024 이전의 프로젝트 및 공부 코드</p>
-                            <a class="content4" href="https://github.com/hydrian634">https://github.com/hydrian634</a>
-                        </div>
-                        <div class="archive-notion">
-                            <img class="img" src="./assets/img/Skills/version control/notion.png" />
-                            <p class="content1">프로젝트 문서</p>
-                            <a class="content2" href="https://www.notion.so/skaya0206">
-                                https://www.notion.so/skaya0206
+                    <!-- -------------------------------메뉴바------------------------------- -->
+                    <div class="menu-bar">
+                        <!-- ---------------home--------------- -->
+                        <div class="home scroll">
+                            <a href="#scroll1">
+                                <span>Home</span>
                             </a>
-                            <p class="content3">Tistory</p>
-                            <a href="https://watchitover.tistory.com/" class="content4"
-                                >https://watchitover.tistory.com/</a
-                            >
                         </div>
+                        <!-- ---------------about me--------------- -->
+                        <div class="about scroll">
+                            <a href="#scroll2">
+                                <span>About Me</span>
+                            </a>
+                        </div>
+                        <!-- ---------------skills--------------- -->
+                        <div class="skill scroll">
+                            <a href="#scroll3">
+                                <span>Skills</span>
+                            </a>
+                        </div>
+                        <!-- ---------------archiving--------------- -->
+                        <div class="archive scroll">
+                            <a href="#scroll4">
+                                <span>Archiving</span>
+                            </a>
+                        </div>
+                        <!-- ---------------projects--------------- -->
+                        <div class="project scroll">
+                            <a href="#scroll5">
+                                <span>Projects</span>
+                            </a>
+                        </div>
+                        <!-- ------------------------------ -->
                     </div>
-                </section>
-            </section>
+                    <!-- menu-bar 끝 -->
+                </nav>
+                <!-- top-menu 끝 -->
+            </header>
+            <!-- -------------------------------내용------------------------------- -->
+            <section class="content">
+                <h1 style="display: none">주 내용</h1>
 
-            <!-- --------------------------------------------------------------Projects-------------------------------------------------------------- -->
-            <section class="project" id="#scroll5">
-                <h2 style="display: none">Projects</h2>
-                <section class="project-box">
-                    <h3 style="display: none">프로젝트</h3>
-                    <!-- -------------------------------프로젝트 제목부------------------------------- -->
-                    <div class="project-title">
-                        <p class="title">Projects</p>
-                    </div>
-                    <!-- -------------------------------프로젝트 내용부------------------------------- -->
-                    <div class="project-content">
-                        <!-- -------------------------------프로젝트1------------------------------- -->
-                        <section class="width-prj">
-                            <h4 class="project-name">HomePEasy</h4>
-                            <img class="prj-img" src="./assets/img/prjimg/HomePEasy/prjneople.png" />
-                            <div class="content">
-                                <p>홈페이지 빌더</p>
-                                <a href="https://github.com/Juru99/HomePEasy">https://github.com/Juru99/HomePEasy</a>
-                                <p>
-                                    대학 졸업 작품으로 WIX, IMWEB 과 같이 사용자가 직접 자신의 사이트를 만들 수 있게
-                                    도와주는 사이트입니다.
-                                </p>
-                                <p>
-                                    개인 사업자나 일반 학생들이 무료로 이용할 수 있는 사이트가 필요하다고 생각되어
-                                    만들게 되었습니다.
-                                </p>
-                                <p>
-                                    HTML, JS, CSS, SPRING을 이용한 프로젝트로 Spring 구조를 이해할 수 있게 된
-                                    프로젝트였습니다.
-                                </p>
+                <!-- --------------------------------------------------------------Intro-------------------------------------------------------------- -->
+
+                <section class="intro" id="#scroll1">
+                    <h2 style="display: none">Introduce</h2>
+                    <section class="intro-content">
+                        <h3 style="display: none">자기 소개</h3>
+                        <div class="content-title">
+                            <p>강한얼</p>
+                            <p>웹 개발자 포트폴리오</p>
+                        </div>
+                        <hr />
+                        <div class="content-content">
+                            <p>안녕하세요.ㅁㄴㅇㄹ</p>
+                            <p>신입 웹 개발자 강한얼입니다.</p>
+                            <p>현재 수정 중인 페이지입니다.</p>
+                        </div>
+                    </section>
+                </section>
+
+                <!-- --------------------------------------------------------------About Me-------------------------------------------------------------- -->
+
+                <section class="about" id="#scroll2">
+                    <h2 style="display: none">About Me</h2>
+                    <section class="about-box">
+                        <h3 style="display: none">인적 사항</h3>
+                        <!-- -------------------------------인적 사항 제목부------------------------------- -->
+                        <div class="about-title">
+                            <p class="title">About Me</p>
+                        </div>
+                        <!-- -------------------------------인적 사항 내용부------------------------------- -->
+                        <div class="about-content">
+                            <!-- -------------------------------인적 사항 내용부 1------------------------------- -->
+                            <div class="sub1">
+                                <p class="name1">이름</p>
+                                <p class="name2">강한얼</p>
+
+                                <p class="birth1">생년월일</p>
+                                <p class="birth2">1999.02.06</p>
+
+                                <p class="address1">주소</p>
+                                <p class="address2">서울특별시 영등포구</p>
                             </div>
-                        </section>
-                        <!-- -------------------------------프로젝트2------------------------------- -->
-                        <section class="height-prj">
-                            <h4 class="project-name">음식점 테이블 주문 프로그램</h4>
-                            <img class="prj-img" src="./assets/img/prjimg/TableOrder/1.png" />
-                            <div class="content">
-                                <p>유한대학교 C# 기말 과제 프로젝트</p>
-                                <a href="https://github.com/minseong00/2jo">https://github.com/minseong00/2jo</a>
-                                <p>
-                                    대학 프로젝트로 T오더와 같이 사용자가 앉은 자리에서 메뉴를 주문하고 결제할 수 있는
-                                    프로그램입니다.
-                                </p>
-                                <p>
-                                    당시 외부 활동으로 인해 프로젝트에 많은 시간을 쓸 수 없었지만 팀원들과 지속적으로
-                                    소통하여 프로젝트에 최대한 참여하였습니다.
-                                </p>
-                                <p>
-                                    처음으로 Git을 이용하여 협업한 프로젝트로, 프로그래밍을 어떻게 하는 것인지 알 수
-                                    있었던 프로젝트였습니다.
-                                </p>
+                            <!-- -------------------------------인적 사항 내용부 2------------------------------- -->
+                            <div class="sub2">
+                                <p class="phone1">연락처</p>
+                                <p class="phone2">010-9094-3145</p>
+
+                                <p class="email1">이메일</p>
+                                <p class="email2">skyaliqo0206@gmail.com</p>
+
+                                <p class="education1">학력</p>
+                                <p class="education2">유한대학교</p>
+                                <p class="education3">컴퓨터 소프트웨어 공학과</p>
                             </div>
-                        </section>
-                        <!-- -------------------------------프로젝트3------------------------------- -->
-                        <section class="height-prj">
-                            <h4 class="project-name">맛잘알</h4>
-                            <img class="prj-img" src="./assets/img/prjimg/matzalal/1.png" />
-                            <div class="content">
-                                <p>맛집 추천 웹사이트</p>
-                                <p>
-                                    <a href="">https://github.com/devhoody/MatzalalProject</a
-                                    ><span style="color: #afafaf"> 비공개 설정으로 인한 이동 불가.</span>
-                                </p>
-                                <p>
-                                    맛있는 것을 먹기 위해 인터넷을 검색하면 맛집이라고 광고하는 가게가 많지만 정작
-                                    가보면 그저 그런, 혹은 맛이 없는 가게가 많습니다.
-                                </p>
-                                <p>
-                                    그런 가게를 거르고 광고가 아닌 진짜 맛집들을 찾아 알려주기 위해 만든 사이트입니다.
-                                </p>
-                                <p>
-                                    Spring Boot와 thymeleaf, postman은 써본 적이 없거나 사용한 지 오래되어 기억이 잘
-                                    나지 않아 당황스러웠지만 인터넷 검색 및 국비 교육을 통해 탄탄한 기본을 배울 수
-                                    있었습니다.
-                                </p>
-                                <p>
-                                    github를 이용한 형상 관리를 하였으나 프로젝트 발표 직전에 제대로 알아차리지 못한
-                                    오류들의 누적으로 인해 파일들이 손상되어 프로젝트 마무리를 제대로 하지 못해 아쉬움이
-                                    크게 남았습니다.
-                                </p>
+                        </div>
+                        <!-- -------------------------------인적 사항 내용부 2 끝------------------------------- -->
+                        <!-- -------------------------------인적 사항 배용부 끝------------------------------- -->
+                    </section>
+                </section>
+
+                <!-- --------------------------------------------------------------Skills-------------------------------------------------------------- -->
+
+                <section class="skill" id="#scroll3">
+                    <h2 style="display: none">Skills</h2>
+                    <!-- -------------------------------기술------------------------------- -->
+                    <section class="skill-box">
+                        <h3 style="display: none">기술</h3>
+                        <!-- -------------------------------기술 제목부------------------------------- -->
+                        <div class="skill-title">
+                            <p class="title">Skills</p>
+                        </div>
+                        <!-- -------------------------------기술 내용부------------------------------- -->
+                        <div class="skill-content">
+                            <!-- -------------------------------프론트------------------------------- -->
+                            <div class="front">
+                                <p class="title">Front End</p>
+                                <img class="stack" src="./assets/img/Skills/front/img.png" />
+                                <!-- <img  class="" src="" /> -->
                             </div>
-                        </section>
-                        <!-- -------------------------------프로젝트4------------------------------- -->
-                        <section class="height-prj">
-                            <h4 class="project-name">PortFolio</h4>
-                            <img class="prj-img" src="./assets/img/prjimg/portFolio/1.png" />
-                            <div class="content">
-                                <p>포트폴리오</p>
-                                <a href="https://github.com/PienHEK/PortFolio">https://github.com/PienHEK/PortFolio</a>
-                                <p>포트폴리오 사이트. 현재 페이지. 2024/01/25 ~ 2024/</p>
-                                <p>
-                                    기본기 위주의 프로젝트입니다. 공부한 것들을 되새김질하고 미숙한 부분들에 익숙해지기
-                                    위한 프로젝트입니다. Vue.js를 이용하여~
-                                </p>
-                                <p></p>
+                            <!-- -------------------------------백------------------------------- -->
+                            <div class="back">
+                                <p class="title">Back End</p>
+                                <div class="stack-box">
+                                    <img class="stack" src="./assets/img/Skills/back/java.png" />
+                                    <img class="stack" src="./assets/img/Skills/back/spring.png" />
+                                    <img class="stack" src="./assets/img/Skills/back/boot.png" />
+                                    <img class="stack" src="./assets/img/Skills/back/maria.png" />
+                                </div>
                             </div>
-                        </section>
-                    </div>
+                            <!-- -------------------------------형상관리------------------------------- -->
+                            <div class="vc">
+                                <p class="title">Version Control</p>
+                                <img class="stack" src="./assets/img/Skills/version control/git.png" />
+                                <img class="stack" src="./assets/img/Skills/version control/github2.png" />
+                            </div>
+                            <!-- -------------------------------자격증------------------------------- -->
+                            <div class="cert">
+                                <p class="title">Certification</p>
+                                <img class="stack" src="./assets/img/Skills/certification/cert.png" />
+                                <p class="cert-name">정보처리산업기사</p>
+                                <!-- <img  class="" src="" /> -->
+                            </div>
+                        </div>
+                    </section>
+                </section>
+
+                <!-- --------------------------------------------------------------Archiving-------------------------------------------------------------- -->
+
+                <section class="archive" id="#scroll4">
+                    <h2 style="display: none">Archiving</h2>
+                    <section class="archive-box">
+                        <h3 style="display: none">아카이브</h3>
+                        <div class="archive-title"><p class="title">Archiving</p></div>
+                        <div class="archive-content">
+                            <div class="archive-git">
+                                <img class="img" src="./assets/img/Skills/version control/github2.png" />
+                                <p class="content1">2024 이후 프로젝트 소스코드</p>
+                                <a class="content2" href="https://github.com/PienHEK">https://github.com/PienHEK</a>
+                                <p class="content3">2024 이전의 프로젝트 및 공부 코드</p>
+                                <a class="content4" href="https://github.com/hydrian634"
+                                    >https://github.com/hydrian634</a
+                                >
+                            </div>
+                            <div class="archive-notion">
+                                <img class="img" src="./assets/img/Skills/version control/notion.png" />
+                                <p class="content1">프로젝트 문서</p>
+                                <a class="content2" href="https://www.notion.so/skaya0206">
+                                    https://www.notion.so/skaya0206
+                                </a>
+                                <p class="content3">Tistory</p>
+                                <a href="https://watchitover.tistory.com/" class="content4"
+                                    >https://watchitover.tistory.com/</a
+                                >
+                            </div>
+                        </div>
+                    </section>
+                </section>
+
+                <!-- --------------------------------------------------------------Projects-------------------------------------------------------------- -->
+                <section class="project" id="#scroll5">
+                    <h2 style="display: none">Projects</h2>
+                    <section class="project-box">
+                        <h3 style="display: none">프로젝트</h3>
+                        <!-- -------------------------------프로젝트 제목부------------------------------- -->
+                        <div class="project-title">
+                            <p class="title">Projects</p>
+                        </div>
+                        <!-- -------------------------------프로젝트 내용부------------------------------- -->
+                        <div class="project-content">
+                            <!-- -------------------------------프로젝트1------------------------------- -->
+                            <section class="width-prj">
+                                <h4 class="project-name">HomePEasy</h4>
+                                <img class="prj-img" src="./assets/img/prjimg/HomePEasy/prjneople.png" />
+                                <div class="content">
+                                    <p>홈페이지 빌더</p>
+                                    <a href="https://github.com/Juru99/HomePEasy"
+                                        >https://github.com/Juru99/HomePEasy</a
+                                    >
+                                    <p>
+                                        대학 졸업 작품으로 WIX, IMWEB 과 같이 사용자가 직접 자신의 사이트를 만들 수 있게
+                                        도와주는 사이트입니다.
+                                    </p>
+                                    <p>
+                                        개인 사업자나 일반 학생들이 무료로 이용할 수 있는 사이트가 필요하다고 생각되어
+                                        만들게 되었습니다.
+                                    </p>
+                                    <p>
+                                        HTML, JS, CSS, SPRING을 이용한 프로젝트로 Spring 구조를 이해할 수 있게 된
+                                        프로젝트였습니다.
+                                    </p>
+                                </div>
+                            </section>
+                            <!-- -------------------------------프로젝트2------------------------------- -->
+                            <section class="height-prj">
+                                <h4 class="project-name">음식점 테이블 주문 프로그램</h4>
+                                <img class="prj-img" src="./assets/img/prjimg/TableOrder/1.png" />
+                                <div class="content">
+                                    <p>유한대학교 C# 기말 과제 프로젝트</p>
+                                    <a href="https://github.com/minseong00/2jo">https://github.com/minseong00/2jo</a>
+                                    <p>
+                                        대학 프로젝트로 T오더와 같이 사용자가 앉은 자리에서 메뉴를 주문하고 결제할 수
+                                        있는 프로그램입니다.
+                                    </p>
+                                    <p>
+                                        당시 외부 활동으로 인해 프로젝트에 많은 시간을 쓸 수 없었지만 팀원들과
+                                        지속적으로 소통하여 프로젝트에 최대한 참여하였습니다.
+                                    </p>
+                                    <p>
+                                        처음으로 Git을 이용하여 협업한 프로젝트로, 프로그래밍을 어떻게 하는 것인지 알 수
+                                        있었던 프로젝트였습니다.
+                                    </p>
+                                </div>
+                            </section>
+                            <!-- -------------------------------프로젝트3------------------------------- -->
+                            <section class="height-prj">
+                                <h4 class="project-name">맛잘알</h4>
+                                <img class="prj-img" src="./assets/img/prjimg/matzalal/1.png" />
+                                <div class="content">
+                                    <p>맛집 추천 웹사이트</p>
+                                    <p>
+                                        <a href="">https://github.com/devhoody/MatzalalProject</a
+                                        ><span style="color: #afafaf"> 비공개 설정으로 인한 이동 불가.</span>
+                                    </p>
+                                    <p>
+                                        맛있는 것을 먹기 위해 인터넷을 검색하면 맛집이라고 광고하는 가게가 많지만 정작
+                                        가보면 그저 그런, 혹은 맛이 없는 가게가 많습니다.
+                                    </p>
+                                    <p>
+                                        그런 가게를 거르고 광고가 아닌 진짜 맛집들을 찾아 알려주기 위해 만든
+                                        사이트입니다.
+                                    </p>
+                                    <p>
+                                        Spring Boot와 thymeleaf, postman은 써본 적이 없거나 사용한 지 오래되어 기억이 잘
+                                        나지 않아 당황스러웠지만 인터넷 검색 및 국비 교육을 통해 탄탄한 기본을 배울 수
+                                        있었습니다.
+                                    </p>
+                                    <p>
+                                        github를 이용한 형상 관리를 하였으나 프로젝트 발표 직전에 제대로 알아차리지 못한
+                                        오류들의 누적으로 인해 파일들이 손상되어 프로젝트 마무리를 제대로 하지 못해
+                                        아쉬움이 크게 남았습니다.
+                                    </p>
+                                </div>
+                            </section>
+                            <!-- -------------------------------프로젝트4------------------------------- -->
+                            <section class="height-prj">
+                                <h4 class="project-name">PortFolio</h4>
+                                <img class="prj-img" src="./assets/img/prjimg/portFolio/1.png" />
+                                <div class="content">
+                                    <p>포트폴리오</p>
+                                    <a href="https://github.com/PienHEK/PortFolio"
+                                        >https://github.com/PienHEK/PortFolio</a
+                                    >
+                                    <p>포트폴리오 사이트. 현재 페이지. 2024/01/25 ~ 2024/</p>
+                                    <p>
+                                        기본기 위주의 프로젝트입니다. 공부한 것들을 되새김질하고 미숙한 부분들에
+                                        익숙해지기 위한 프로젝트입니다. Vue.js를 이용하여~
+                                    </p>
+                                    <p></p>
+                                </div>
+                            </section>
+                        </div>
+                    </section>
                 </section>
             </section>
-        </section>
-        <!-- -------------------------------content 끝------------------------------- -->
-        <footer class="footer">
-            <div><p>2024.01.14</p></div>
-        </footer>
-    </body>
-    <RouterView />
+            <!-- -------------------------------content 끝------------------------------- -->
+            <footer class="footer">
+                <div><p>2024.01.14</p></div>
+            </footer>
+        </body>
+    </RouterView>
 </template>
 
 <style scoped>
 @import "//cdn.jsdelivr.net/npm/font-kopubworld@1.0/batang.min.css";
+
+/* @font-face {
+    font-family: NanumSquareWeb;
+    src: url(//cdn.jsdelivr.net/npm/font-kopubworld@1.0/batang.min.css) format("woff");
+} */
 
 body {
     font-family: "KopubWorldBatang";

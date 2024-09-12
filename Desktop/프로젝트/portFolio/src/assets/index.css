@@ -1,4 +1,9 @@
-@import "//cdn.jsdelivr.net/npm/font-kopubworld@1.0/batang.min.css";
+/* @import "//cdn.jsdelivr.net/npm/font-kopubworld@1.0/batang.min.css"; */
+
+@font-face {
+    font-family: NanumSquareWeb;
+    src: url(//cdn.jsdelivr.net/npm/font-kopubworld@1.0/batang.min.css) format("woff");
+}
 
 body {
     font-family: "KopubWorldBatang";
